@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gemspec
 
+gem 'bundler', github: 'carlhuda/bundler'
+
 if ENV['AREL']
   gem 'arel', path: ENV['AREL']
 else
