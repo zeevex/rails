@@ -398,7 +398,6 @@ module ActiveRecord
       @destroyed               = false
       @marked_for_destruction  = false
       @new_record              = true
-      @mass_assignment_options = nil
     end
   end
 end
