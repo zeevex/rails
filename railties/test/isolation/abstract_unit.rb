@@ -252,7 +252,6 @@ module TestHelpers
       to_remove =  [:actionmailer,
                     :activerecord] - arr
       if to_remove.include? :activerecord
-        remove_from_config "config.active_record.whitelist_attributes = true"
         remove_from_config "config.active_record.dependent_restrict_raises = false"
       end
       $:.reject! {|path| path =~ %r'/(#{to_remove.join('|')})/' }
